@@ -14,9 +14,6 @@ export class Seller {
     @Column()
     email: string;
 
-    @Column()
-    sellerAddress: Address;
-
     @OneToMany(() => Address, (address: Address) => address.seller)
     address: Address[];
 
